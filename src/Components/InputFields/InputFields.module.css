@@ -1,0 +1,34 @@
+.inputFieldBox {
+  width: 560px;
+  height: 60px;
+  border-color: #dcdcdc;
+  border-width: 0.800000011920929px;
+  border-style: solid;
+  border-radius: 8px;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 10px;
+  margin: 15px 0;
+}
+.inputFieldBox p {
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  text-align: left;
+  color: #aaaaaa;
+  margin-bottom: 5px;
+}
+.inputFieldBox input {
+  font-size: 16px;
+  font-weight: 500;
+  font-style: normal;
+  text-align: left;
+  color: #6c6c6c;
+  border: none;
+}
+
+.inputFieldBox input:focus {
+  outline: none;
+}

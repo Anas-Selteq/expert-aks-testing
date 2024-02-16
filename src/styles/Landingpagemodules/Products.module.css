@@ -1,0 +1,20 @@
+.productListContainer {
+  display: flex;
+  align-items: center;
+  /* align-items: center; */
+  /* justify-content: center; */
+  flex-wrap: wrap;
+  width: 94%;
+  margin: 0 auto;
+  /* padding-left: 0.3vw; */
+}
+.productBox {
+  /* margin: 0 2.25vw; */
+  /* margin-right: 2vw; */
+  padding: 0 2vw;
+  /* margin-right: vw; */
+}
+.headingAlign {
+  margin-left: 90px;
+  margin-top: 30px;
+}

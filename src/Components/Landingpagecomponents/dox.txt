@@ -1,0 +1,19 @@
+ {/* <div className="card-navigation">
+        <button onClick={prevCards} disabled={currentIndex === 0}>
+          Back
+        </button>
+        <button onClick={nextCards} disabled={currentIndex + 3 >= newdata.length}>
+          Next
+        </button>
+      </div> */}
+      {/* <div className="row">
+        {displayCards.map((card: any, index: number) => (
+          <div className={`col-md-4 card-container`} key={card.id}>
+            <div className="card">
+              <h3>{card.serviceName}</h3>
+              <p>{card.shortDesc}</p>
+              <img src={card.attachments[0].imageUrl} alt="Card Image" />
+            </div>
+          </div>
+        ))}
+      </div> */}

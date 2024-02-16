@@ -1,0 +1,20 @@
+.categoryAlignContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 140px;
+}
+
+.itemContainerBox {
+  margin: 0 50px;
+  text-align: center !important;
+}
+
+.boxAlign {
+  width: 93%;
+}
+
+.textBoxAlign {
+  margin-left: 110px;
+  margin-top: 30px;
+}

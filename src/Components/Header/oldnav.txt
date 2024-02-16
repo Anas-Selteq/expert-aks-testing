@@ -1,0 +1,358 @@
+ {/* old navigation top  */}
+      {/* <div className="navigation_pc">
+        {props.profile?.firstName ? (
+          <div className="col-md-12 background_color_navigation_two py-2">
+            <div className="col-md-12 px-5">
+              <div className="row">
+                <div className="col-md-6">
+                  <div className="row">
+                    <div className="col-md-3">
+                      <Image
+                        className="img-fluid logo_width_image"
+                        src="/assets/Images/navexp.png"
+                        alt="navexp"
+                        height={200}
+                        width={200}
+                      />
+                    </div>
+                    <div className="col-md-9 m-auto">
+                      <span className="font_exp">Become an expert</span>
+                      &nbsp;&nbsp;&nbsp;
+                      <span className="font_exp">Help</span>&nbsp;&nbsp;&nbsp;
+                      <span className="font_exp">Contact</span>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-md-6 m-auto">
+                  <div className="row">
+                    <div className="col-md-9 text-end m-auto text-end ">
+                      <span>
+                        <img
+                          className="img-fluid heart_icon"
+                          src="/imagess/avatar.png"
+                        />
+                      </span>
+                      &nbsp;&nbsp;
+                      <span>
+                        <img
+                          className="img-fluid heart_icon"
+                          src="/imagess/avatar.png"
+                        />
+                      </span>
+                      &nbsp;&nbsp;
+                      <span>
+                        <img
+                          className="img-fluid heart_icon"
+                          src="/imagess/avatar.png"
+                        />
+                      </span>
+                      &nbsp;&nbsp;
+                      <span>
+                        <img
+                          className="img-fluid heart_icon"
+                          src="/imagess/avatar.png"
+                        />
+                      </span>
+                      &nbsp;&nbsp;
+                      <span>
+                        <img
+                          className="img-fluid downn"
+                          src="/imagess/avatar.png"
+                        />
+                      </span>
+                    </div>
+                    <div className="col-md-3">
+                      <div className="row">
+                        <div className="col-md-6 text-center">
+                          <img
+                            className="img-fluid img_ava"
+                            src={
+                              props?.profile?.imageURL || "/imagess/avatar.png"
+                            }
+                          />
+                        </div>
+                        <div className="col-md-6 px-0">
+                          <Dropdown>
+                            <Dropdown.Toggle
+                              variant="white"
+                              id="dropdown-basicc"
+                            >
+                              <p className="guest_hello mb-0 pb-0 ">
+                                {" "}
+                                {props.profile?.firstName || ""}{" "}
+                              </p>
+                            </Dropdown.Toggle>
+
+                            <Dropdown.Menu id="new_drop">
+                              <div className="col-md-12 px-3">
+                                <div className="text-center pt-2">
+                                  <img
+                                    className="img-fluid img_ava1"
+                                    src={
+                                      props?.profile?.imageURL ||
+                                      "/imagess/avatar.png"
+                                    }
+                                  />
+                                  <p className="text-color-black mb-0">
+                                    <b>
+                                      {" "}
+                                      {props.profile?.firstName ||
+                                        ""}{" "}
+                                      {props.profile?.lastName || ""}
+                                    </b>
+                                  </p>
+                                  <p className="color_email">
+                                    {props.profile?.primaryEmail || "No Email"}
+                                  </p>
+                                </div>
+                              </div>
+                              <hr />
+                              <div className="col-md-12 px-4">
+                                <div className="col-md-12 px-2 mb-0 pb-0">
+                                  <Link
+                                    href="/userProfile/profile/"
+                                    className="style_a_tag"
+                                  >
+                                    <p className="mb-0 pb-0 text_icon_all">
+                                      <img
+                                        className="img-fluid img_width_all_icons"
+                                        src="/assets/Images/user.png"
+                                      />{" "}
+                                      &nbsp; Manage Account
+                                    </p>
+                                  </Link>
+                                </div>
+                                <hr />
+                                <div className="col-md-12 px-2 mb-0 pb-0">
+                                  <p className="mb-0 pb-0 text_icon_all">
+                                    <img
+                                      className="img-fluid img_width_all_icons"
+                                      src="../../assets/Images/shield.png"
+                                    />{" "}
+                                    &nbsp; File Manager
+                                  </p>
+                                </div>
+                                <hr />
+                                <div className="col-md-12 px-2 mb-0 pb-0">
+                                  <p className="mb-0 pb-0 text_icon_all">
+                                    <img
+                                      className="img-fluid img_width_all_icons"
+                                      src="../../assets/Images/news.png"
+                                    />{" "}
+                                    &nbsp; Terms of Use
+                                  </p>
+                                </div>
+                                <hr />
+                                <div className="col-md-12 px-2 mb-0 pb-0">
+                                  <p className="mb-0 pb-0 text_icon_all">
+                                    <img
+                                      className="img-fluid img_width_all_icons"
+                                      src="../../assets/Images/question.png"
+                                    />{" "}
+                                    &nbsp; Help & Support
+                                  </p>
+                                </div>
+                                <hr />
+                                <div className="col-md-12 px-2 mb-0 pb-0">
+                                  <p className="mb-0 pb-0 text_icon_all">
+                                    <img
+                                      className="img-fluid img_width_all_icons"
+                                      src="../../assets/Images/userstar.png"
+                                    />{" "}
+                                    &nbsp; Rate Us
+                                  </p>
+                                </div>
+                                <hr />
+                                <div
+                                  onClick={(e) => {
+                                    dispatch({ type: AUTH_ACTIONS.LOGOUT });
+                                    removeCookie && removeCookie("profile");
+                                    localStorage.removeItem("jwtToken");
+                                    localStorage.removeItem("jwtRefreshToken");
+                                    localStorage.removeItem("_grecaptcha");
+                                  }}
+                                  className="col-md-12 px-2 mb-0 pb-0 pb-2"
+                                >
+                                  <Link href="/" className="style_a_tag">
+                                    <p className="mb-0 pb-0 text_icon_all">
+                                      <img
+                                        className="img-fluid img_width_all_icons"
+                                        src="../../assets/Images/logout.png"
+                                      />{" "}
+                                      &nbsp; Logout
+                                    </p>
+                                  </Link>
+                                </div>
+                              </div>
+                            </Dropdown.Menu>
+                          </Dropdown>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        ) : (
+          <>
+            <div className="col-md-12 background_color_navigation_one">
+              <div className="container py-1">
+                <div className="row">
+                  <div className="col-md-2 display_image_header_icons">
+                    {[
+                      "facebook",
+                      "twitter",
+                      "linkedin",
+                      "insta",
+                      "pintrist",
+                      "youtube",
+                    ].map((icon, index) => (
+                      <span key={index}>
+                        <Image
+                          className="img-fluid header_nav_icons_width"
+                          src={`/assets/Images/${icon}.png`}
+                          alt={icon}
+                          height={14.94}
+                          width={14.94}
+                        />
+                        {"  "}
+                      </span>
+                    ))}
+                  </div>
+                  <div className="col-md-3 justify-content-">
+                    <span className="d-inline-block me-3 font_new_one_header">
+                      About
+                    </span>
+                    &nbsp;
+                    <span className="d-inline-block me-3 font_new_one_header">
+                      Blog
+                    </span>
+                    &nbsp;
+                    <span className="d-inline-block me-3 font_new_one_header">
+                      Help
+                    </span>
+                    &nbsp;
+                    <span className="d-inline-block me-3 font_new_one_header">
+                      FAQs
+                    </span>
+                  </div>
+                  <div className="col-md-7 text-end">
+                    <Link href="/services/" style={{ textDecoration: "none" }}>
+                      <span className=" d-inline-block me-3 font_new_one_header1">
+                        All Services
+                      </span>
+                    </Link>
+                    <span className=" d-inline-block me-3 font_new_one_header1">
+                      Become an Expert
+                    </span>
+                    <span className=" d-inline-block me-3 font_new_one_header1">
+                      Offers
+                    </span>
+                    <span className=" d-inline-block me-3 font_new_one_header1">
+                      Refer & Earn
+                    </span>
+                    <span className=" d-inline-block me-3 font_new_one_header1">
+                      24/7 Customer Care
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="col-md-12 background_color_navigation_two">
+              <div className="container py-1">
+                <div className="row align-items-center">
+                  <div className="col-md-2">
+                    <Image
+                      className="img-fluid logo_width_image"
+                      src="/assets/Images/navexp.png"
+                      alt="NavExp"
+                      height={20}
+                      width={20}
+                    />
+                  </div>
+                  <div className="col-md-4">
+                    <input
+                      className="form-control input_form_search"
+                      type="text"
+                      placeholder="I'm searching for..."
+                    />
+                  </div>
+                  <div className="col-md-6 m-auto">
+                    <div className="row ">
+                      <div className="col-md-7  text-end">
+                        <span>
+                          <button className="btn btn-light px-0 background_button_nav background_button_light">
+                            <Image
+                              className="img-fluid img_tag"
+                              src="/assets/Images/tag.png"
+                              alt="Tag"
+                              height={21}
+                              width={21}
+                            />
+                          </button>
+                        </span>
+                        &nbsp;&nbsp;
+                        <span>
+                          <button className="btn btn-light px-2 background_button_nav background_button_light">
+                            <Image
+                              className="img-fluid img_cart"
+                              src="/assets/Images/cart.png"
+                              alt="Cart"
+                              height={25}
+                              width={25}
+                            />{" "}
+                            &nbsp;
+                            <span className="fontcart">Cart</span>
+                          </button>
+                        </span>
+                        <span>
+                          <button className="btn btn-light px-2 background_button_nav_lang background_button_light">
+                            <p className="fontcartlang mb-0 pb-0">EN</p>
+                            <Image
+                              className="img-fluid img_globe"
+                              src="/assets/Images/globe.png"
+                              alt="globe"
+                              height={16}
+                              width={16}
+                            />
+                          </button>
+                        </span>
+                      </div>
+                      <div className="col-md-5 border_left_new text-left m-auto display_but">
+                        <Image
+                          className="img-fluid img_avatar"
+                          src="/assets/Images/avatar.png"
+                          alt="Avatar"
+                          height={50}
+                          width={50}
+                        />
+                        <Dropdown>
+                          <Dropdown.Toggle variant="white" id="dropdown-basic">
+                            <Link
+                              href="/auth/signup"
+                              style={{ textDecoration: "none" }}
+                            >
+                              <h6 className="guest mb-0">
+                                {" "}
+                                {props.profile?.firstName || "Guest"}
+                              </h6>
+                              <h6 className="loginreg mb-0">
+                                {props.profile?.firstName
+                                  ? "Logged In"
+                                  : "Login & Register"}
+                              </h6>
+                            </Link>
+                          </Dropdown.Toggle>
+                        </Dropdown>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </>
+        )}
+      </div>
+      <hr /> */}

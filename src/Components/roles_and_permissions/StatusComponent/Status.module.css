@@ -1,0 +1,15 @@
+.statusBtn {
+  width: 60px;
+  height: 20px;
+  border-radius: 5px;
+  background: #b8d693;
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  text-align: center;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 12px;
+}

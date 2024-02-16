@@ -1,0 +1,45 @@
+.storyBox {
+  height: 240px;
+  width: 150px;
+  border-radius: 10px;
+  background-color: aliceblue;
+  margin-right: 30px;
+  /* position: relative; */
+  border-radius: 15px;
+}
+.storyBox img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+.storyBox .test {
+  width: 135px;
+  position: absolute;
+  bottom: 5px;
+  left: 8px;
+}
+
+.storyBox p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #1e1e1e;
+  word-wrap: break-word;
+}
+.storiesContainer {
+  /* width: 100%; */
+  height: 240px;
+  margin-left: 90px;
+  margin-bottom: 110px;
+}
+.alignStoriesContainer {
+  width: 100%;
+  display: flex;
+  margin-top: 30px;
+}
+.boxAlign {
+  width: 100%;
+}

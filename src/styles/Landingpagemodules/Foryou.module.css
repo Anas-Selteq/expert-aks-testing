@@ -1,0 +1,26 @@
+.foryouSlider {
+  width: 100%;
+  height: 440px;
+}
+.foryouSlider img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+.foryouSlider video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+.alignForyouSlider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.alignForyouHeading {
+  margin-left: 90px;
+  margin-top: 50px;
+  margin-bottom: 23px;
+}

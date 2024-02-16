@@ -1,0 +1,200 @@
+.heroSlider {
+  width: 100%;
+  position: relative;
+  height: 50vh !important;
+  background-color: #E3A811;
+}
+
+.heroSlidermob {
+  width: 100%;
+  position: relative !important;
+  z-index: 99;
+}
+
+.heroSlider img {
+  width: 100%;
+  
+}
+
+.alignSearchContainer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sloganText {
+  font-family: "poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #ffffff;
+  margin-bottom: 17px;
+}
+
+.sloganTextmain {
+  font-family: "poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #ffffff;
+  margin-bottom: 9px;
+}
+
+.sloganBold {
+  font-weight: 600;
+}
+
+.CompleteInputField {
+  width: 511px;
+  height: 46px;
+  background: #f5f5f5;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 36px;
+}
+
+.inputField {
+  height: 46px;
+  width: 450px;
+  background-color: transparent;
+  border: none;
+  padding-left: 10px;
+  font-style: normal;
+  font-weight: 600;
+  opacity: 1;
+  font-size: 14px;
+  /* color: #bababa; */
+}
+
+.inputField[type="text"]:focus {
+  outline: none;
+}
+
+.VoiceSearchIconBg {
+  width: 36px;
+  height: 36px;
+  background: #EAEAEA;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 15px;
+  border: 1px solid #EAEAEA;
+  color: #FF0000 !important;
+}
+
+.bigOfferText {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 34px;
+  margin-bottom: 23px;
+  color: #000000;
+}
+
+.discountText {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 26px;
+  color: #ffffff;
+}
+
+.discountText1 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  color: #ffffff;
+}
+
+.getAppBtn {
+  width: 173px;
+  height: 46px;
+  background: #df0303;
+  box-shadow: 0px 9px 18px rgba(255, 118, 118, 0.5);
+  border-radius: 6px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.getAppBtn img {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+}
+
+
+
+#newcolor_icon
+{
+  color: white !important;
+}
+
+@media only screen and (max-width: 600px) {
+
+  .Iconhide
+{
+  display: none;
+}
+
+  .VoiceSearchIconBg {
+    width: 36px;
+    height: 36px;
+    background: #DF0303;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15px;
+    border: 1px solid #EAEAEA;
+    color: #FFFFFF !important;
+  }
+
+  .heroSlider {
+    width: 100%;
+    position: relative;
+    height: auto;
+  }
+
+  .heroSlidermob {
+    width: 100%;
+    position: relative !important;
+    z-index: 99;
+    display: block !important;
+  }
+
+
+  .getAppBtn {
+    display: none;
+  }
+
+  .bigOfferText {
+    display: none;
+  }
+
+  .discountText {
+    display: none;
+  }
+
+  .inputField {
+    display: none !important;
+  }
+
+  .CompleteInputField {
+    display: none;
+  }
+}

@@ -1,0 +1,45 @@
+     {selectedslots ? (
+            <>
+              <hr className="bg_hr_line" />
+              <div
+                className="d-flex justify-content-between align-items-center px-3 mb-2"
+              // onClick={() => handlePageMovement("ExpertNotes")}
+              >
+                <div style={{ fontSize: "85%", color: "black" }}>
+                  <div className="label_text pb-2">Slotes Selected</div>
+                  <BiCalendarAlt className="text-danger me-2" />
+                  <Moment format="DD MMM, YYYY">
+                    {selectedslots[0]?.bookingDate}
+                  </Moment>{" "}
+                  - &nbsp;
+                  {selectedslots[0]?.timeFrom} to {selectedslots[0]?.timeTo}
+                </div>
+                <div>
+                  <Image
+                    src="/assets/Images/rightt.png"
+                    alt="keyright"
+                    height={11.19}
+                    width={6.33}
+                  />
+                </div>
+              </div>
+              {/* <hr className="bg_hr_line" />
+              <div
+                className="d-flex justify-content-between align-items-center px-3 mb-2"
+                // onClick={() => handlePageMovement("ExpertNotes")}
+              >
+                <div style={{ fontSize: "85%", color: "black" }}>
+                  <div className="label_text pb-2">Provider</div>
+                  <BiCalendarAlt className="text-danger me-2" /> {purchaseOrder?.data?.providerName}
+                </div>
+                <div>
+                  <Image
+                    src="/assets/Images/rightt.png"
+                    alt="keyright"
+                    height={11.19}
+                    width={6.33}
+                  />
+                </div>
+              </div> */}
+            </>
+          ) : null}

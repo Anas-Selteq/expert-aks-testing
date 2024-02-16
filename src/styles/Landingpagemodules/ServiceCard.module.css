@@ -1,0 +1,65 @@
+.serviceCardContainer {
+  margin-top: 25px;
+  margin-bottom: 36px;
+  width: 208px;
+  /* height: 276px; */
+}
+.imageBox {
+  width: 208px;
+  height: 276px;
+  background: #f6efe5;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  border-radius: 12px;
+}
+.imageBox .img {
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+}
+.addToFav {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  width: 31.48px;
+  height: 31.48px;
+  background: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.serviceTitle {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #1e1e1e;
+  margin-top: 12px;
+  margin-bottom: 5px;
+}
+.serviceInfo {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #9d9d9d;
+  margin-bottom: 8px;
+}
+.servicePrice {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  color: #3a3a3a;
+}
+.serviceOFF {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #9d9d9d;
+}

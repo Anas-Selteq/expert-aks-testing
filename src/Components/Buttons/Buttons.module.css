@@ -1,0 +1,27 @@
+.iconBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 55px;
+  margin: 0 50px;
+  cursor: pointer;
+}
+
+.iconBox div {
+  width: 45px;
+  height: 45px;
+  border-radius: 8px;
+  background: #ec1e27;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.iconBox p {
+  font-size: 15px;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  margin-top: 12px;
+}

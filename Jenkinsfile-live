@@ -1,0 +1,23 @@
+pipeline { 
+	 agent any 
+	 stages { 
+		 stage('Clone repository') { 
+			 steps { 
+				 sh 'cd /home/microservices'
+				 git credentialsId: 'gitcredentional', url: 'https://github.com/rubnawazgondal/expert-net-aks.git' , branch: 'live-branch'
+			 } 
+		 }
+		stage('Build') { 
+			 steps  {
+				 sh 'docker build -t selteq2/live-expert-net-aks:latest -f Dockerfile .'
+				 sh 'docker images'
+				 sh 'docker stop live-expert-net-aks' 
+				 sh 'docker rm live-expert-net-aks' 
+				 sh 'docker create --name live-expert-net-aks -p 5002:3000 selteq2/live-expert-net-aks:latest' 
+				 sh 'docker ps' 
+				 sh 'docker start live-expert-net-aks' 
+				 sh 'docker push selteq2/live-expert-net-aks:latest' 
+			 } 
+		 } 
+	 } 
+ } 

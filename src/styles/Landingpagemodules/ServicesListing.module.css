@@ -1,0 +1,9 @@
+.serviceListingContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.serviceListingBox {
+  width: 90%;
+  margin-top: 30px;
+}
